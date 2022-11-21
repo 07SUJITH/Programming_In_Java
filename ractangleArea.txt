@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+class Rectangle{
+	float length;
+	float breadth;
+	Rectangle(float length,float breadth){
+	this.length=length;
+	this.breadth=breadth;
+	}
+     	float areaRectangle(){
+     	return length*breadth;
+     	}
+}
+
+class RectangleArea{
+public static void main(String args[]){
+
+	Scanner sc=new Scanner(System.in);
+	System.out.println("Enter the length:");
+	float length=sc.nextFloat();
+	System.out.println("Enter the breadth");
+	float breadth=sc.nextFloat();
+	Rectangle rc=new Rectangle(length,breadth);
+	System.out.println("Area of rectangle " + rc.areaRectangle());
+	}
+}
+

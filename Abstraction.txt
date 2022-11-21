@@ -1,0 +1,35 @@
+import java.util.Scanner;
+import java.util.InputMismatchException;
+class TestException{
+ 	static int[] getValue() throws InputMismatchException{
+ 	Scanner sc =new Scanner(System.in);
+ 	System.out.println("Enter number_1:");
+ 	int a=sc.nextInt();
+ 	System.out.println("Enter number_2");
+ 	int b=sc.nextInt();
+ 	int value[] ={a,b};
+ 	return value;
+ 	}
+ 	public static void main(String args[]){
+ 	try{
+ 	   System.out.println("Program to perform Division");
+ 	   int value[]=getValue();
+ 	   int c=value[0]/value[1];
+ 	   System.out.println("result="+c);
+ 	 }
+ 	 catch(ArithmeticException e){
+ 	 System.out.println(e.getMessage());
+ 	 }
+ 	 catch(InputMismatchException e){
+ 	 System.out.println("Invalid integer input");
+ 	 }
+ 	 finally{
+ 	 System.out.println("End of operation");
+ 	 }
+ 	}
+}
+
+Number of Sides = 4
+Number of Sides = 3
+Number of Sides = 6
+
