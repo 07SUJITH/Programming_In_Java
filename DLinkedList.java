@@ -1,25 +1,29 @@
 import java.util.Scanner;
-public class DLinkedList {
+public class DLinkedList{
     class Node{
         int data;
         Node next;
         Node prev;
         Node(int data){
             this.data=data;
+            this.prev=null;
+            this.next=null;
         }
     }
     public Node head;
-    public Node tail;
 
     public void addNode(int data){
         Node newNode = new Node(data);
         if(head==null)
             head=newNode;
         else{
-            tail.next=newNode;
-            newNode.prev=tail;
+            Node temp =head;
+            while(temp.next!=null) 
+                temp=temp.next;
+ 
+            temp.next=newNode;
+            newNode.prev=temp;
         }
-        tail=newNode;
     }
     public void removeNode(int data){
         if(head==null){
@@ -79,3 +83,4 @@ public class DLinkedList {
         }
     }
 }
+ 
