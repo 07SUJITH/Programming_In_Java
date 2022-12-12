@@ -1,0 +1,41 @@
+import java.util.Scanner;
+class QuickSort{
+    static Scanner sc = new Scanner(System.in);
+    static void swap(String[] name,int i,int j){
+        String temp = name[i];
+        name[i] = name[j];
+        name[j] = temp;
+    }
+    static int partition(String[] name,int left,int right){
+        int i=left-1,j;
+        String pivot = name[right];
+        for(j=left;j<right;j++){
+            if(name[j].compareToIgnoreCase(pivot) < 0){
+                i++;
+                swap(name,i,j);
+            }
+        }swap(name,i+1,right);
+        return (i+1);
+    }
+    static void quicksort(String[] name,int left,int right){
+        if(left<right){
+            int pt = partition(name,left,right);
+            quicksort(name,left,pt-1);
+            quicksort(name,pt+1,right);
+        }
+    }
+    public static void main(String[] args){
+        System.out.println("Enter the limit");
+        int limit = sc.nextInt();
+        String[] name = new String[limit];
+        System.out.println("Enter names");
+        for(int i = 0;i<limit;i++){
+            name[i] = sc.next();
+        }
+        quicksort(name,0,limit-1);
+        for(int i = 0;i<limit;i++){
+            System.out.print(name[i]+" ");
+        }
+        System.out.println();
+    }
+}
