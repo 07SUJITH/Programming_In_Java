@@ -45,9 +45,8 @@ class TestMultithread{
 	}
 }
 
-
-
 /*
+
 output
 
 Cube of 97 = 912673
@@ -61,15 +60,19 @@ Cube of 33 = 35937
 Square of32 = 1024
 Cube of 77 = 456533
 
-Cube of 71 = 357911
-Cube of 39 = 59319
-Square of14 = 196
-Square of18 = 324
-Cube of 51 = 132651
-Square of8 = 64
-Square of50 = 2500
-Square of24 = 576
-Square of40 = 1600
-Square of78 = 6084
+1.Create a RandomThread class that extends the Thread class.
+2.In the run method of the RandomThread class, create a new Random object.
+3.In a loop with 10 iterations, generate a random integer between 0 and 99 
+  using the nextInt method of the Random object.
+4.If the random integer is even, create a new EvenThread object with 
+  the random integer as the argument and start the thread.
+5.If the random integer is odd, create a new OddThread object with the
+  random integer as the argument and start the thread.
+6.In the run method of the EvenThread class, print the square of the 
+  number passed to the constructor.
+7.In the run method of the OddThread class, print the 
+  cube of the number passed to the constructor.
+8.In the main method of the TestMultithread class, 
+  create a new RandomThread object and start it.
 
 */
