@@ -53,4 +53,7 @@ Algorithm
    SyncThread objects with the Display object and different strings as arguments
 8. Start both of the objects of SyncThread class(threads)
 
+
+
+
 */
