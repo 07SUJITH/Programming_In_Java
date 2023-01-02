@@ -84,3 +84,27 @@ public class DLinkedList{
     }
 }
  
+/* 
+1.  The DLinkedList class has a nested Node class 
+    that represents a node in the linked list. 
+    Each node has three fields: data, prev, and next.
+2.  The DLinkedList class has three fields: head, which is a reference to
+    the first node in the list, and addNode() and removeNode() methods
+3.  The addNode() method creates a new node with the given data and 
+    adds it to the end of the list.
+    If the list is empty, the new node becomes the head of the list. 
+    Otherwise, the new node is added after the last node in the list.
+4.  4.1 The method checks if the list is empty. If it is, it prints a message and returns.
+    4.2 If the head of the list has the given data . then updates the prev reference of the 
+        next node (if it exists) to be null,and sets the head of the list to be the next node.
+    4.3 else the method starts a loop that iterates over the nodes. It uses a temporary Node 
+        variable temp to store a reference to the current node.
+    4.4 The loop continues until temp becomes null.
+        On each iteration, it checks if the current node has the given data then the loop breaks. else sets temp to be the next node in the list.
+    4.5 If the loop completes without finding a node with the given data value, it prints a message and returns.
+    4.6 If the loop finds a node with the given data value, it updates the prev reference of
+    the next node (if it exists) to be the prev reference of the current node, 
+    and updates the next reference of the previous node to be the next reference of the current node. 
+5.  The display() method prints out the data values of all the nodes in the list.
+    
+*/
