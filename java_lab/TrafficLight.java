@@ -32,9 +32,10 @@ class TrafficLight extends JFrame implements ActionListener {
         setSize(350, 420);
         setVisible(true);
         setResizable(false);
-        getContentPane().setBackground(Color.pink);
+        getContentPane().setBackground(Color.white);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
+
     public void actionPerformed(ActionEvent e) {
         msg = e.getActionCommand();
         if (msg.equals("RED")) {
@@ -48,6 +49,7 @@ class TrafficLight extends JFrame implements ActionListener {
             display.setText(msg + " :TURN ON");
         }
     }
+
     public static void main(String args[]) {
         new TrafficLight();
     }
