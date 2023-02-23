@@ -1,0 +1,15 @@
+
+second file in the program 
+
+Based on the data type, there are two types of streams :
+
+1. Byte Stream:
+This stream is used to read or write byte data. The byte stream is again subdivided into two types which are as follows:
+
+Byte Input Stream: Used to read byte data from different devices.
+Byte Output Stream: Used to write byte data to different devices.
+2. Character Stream:
+This stream is used to read or write character data. Character stream is again subdivided into 2 types which are as follows:
+
+Character Input Stream: Used to read character data from different devices.
+Character Output Stream: Used to write character data to different devices.

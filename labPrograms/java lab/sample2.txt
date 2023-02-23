@@ -1,0 +1,2 @@
+In Java, the FileWriter and FileReader classes are used to write and read character data to and from files, 
+respectively. Both of these classes are part of the java.io package.
