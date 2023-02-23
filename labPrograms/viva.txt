@@ -134,118 +134,482 @@
 
 [6] what is java  awt
 
-AWT stands for Abstract Window Toolkit, and it is the original GUI toolkit for Java. AWT provides a set of native platform-dependent components, such as buttons, text fields, checkboxes, and more, that can be used to create graphical user interfaces (GUIs) for Java applications.
+        AWT stands for Abstract Window Toolkit, and it is the original GUI toolkit for Java. AWT provides a set of native platform-dependent components, such as buttons, text fields, checkboxes, and more, that can be used to create graphical user interfaces (GUIs) for Java applications.
 
 [7] explain java.awt.*
 
-java.awt.* is a package in the Java programming language that provides classes and interfaces for creating graphical user interfaces (GUIs). It contains the basic building blocks for creating GUIs, such as containers, components, layouts, events, and more.
+        java.awt.* is a package in the Java programming language that provides classes and interfaces for creating graphical user interfaces (GUIs). It contains the basic building blocks for creating GUIs, such as containers, components, layouts, events, and more.
 
-Some of the commonly used classes in the java.awt.* package include:
+        Some of the commonly used classes in the java.awt.* package include:
 
-Component: the base class for all AWT components, such as buttons, text fields, and labels
-Container: a component that can contain other components, such as panels, frames, and windows
-Layout: a mechanism for arranging components within a container, such as BorderLayout, GridLayout, and FlowLayout
-Event: a class that represents user input or system events, such as mouse clicks, key presses, and window events
-Color: a class for specifying colors using RGB values or predefined color constants
-Overall, the java.awt.* package provides a foundation for creating GUIs in Java and is often used in conjunction with other packages, such as javax.swing.* and java.awt.event.*.
+        Component: the base class for all AWT components, such as buttons, text fields, and labels
+        Container: a component that can contain other components, such as panels, frames, and windows
+        Layout: a mechanism for arranging components within a container, such as BorderLayout, GridLayout, and FlowLayout
+        Event: a class that represents user input or system events, such as mouse clicks, key presses, and window events
+        Color: a class for specifying colors using RGB values or predefined color constants
+        Overall, the java.awt.* package provides a foundation for creating GUIs in Java and is often used in conjunction with other packages, such as javax.swing.* and java.awt.event.*.
 
 [8] explain javax.swing.*
 
-javax.swing.* is a package in the Java programming language that provides a set of graphical user interface (GUI) components for creating desktop applications. The Swing package builds on top of the AWT package (java.awt.*) and provides a more flexible and customizable set of components.
+        javax.swing.* is a package in the Java programming language that provides a set of graphical user interface (GUI) components for creating desktop applications. The Swing package builds on top of the AWT package (java.awt.*) and provides a more flexible and customizable set of components.
 
-Some of the commonly used classes in the javax.swing.* package include:
+        Some of the commonly used classes in the javax.swing.* package include:
 
-JFrame: a top-level window that can contain other components
-JPanel: a container that can be used to group and organize other components
-JButton: a clickable button that can trigger an action when clicked
-JLabel: a component for displaying text or images
-JTextField: a component for allowing the user to input text
-JComboBox: a component for allowing the user to select one item from a dropdown list
-JCheckBox: a component for allowing the user to select one or more options from a list of checkboxes
-JRadioButton: a component for allowing the user to select one option from a list of radio buttons
-The javax.swing.* package also provides support for advanced features such as accessibility, internationalization, and customizable look and feel. Developers can customize the appearance and behavior of Swing components using pluggable look-and-feel (PLAF) architectures, or they can create their own custom look-and-feel.
+        JFrame: a top-level window that can contain other components
+        JPanel: a container that can be used to group and organize other components
+        JButton: a clickable button that can trigger an action when clicked
+        JLabel: a component for displaying text or images
+        JTextField: a component for allowing the user to input text
+        JComboBox: a component for allowing the user to select one item from a dropdown list
+        JCheckBox: a component for allowing the user to select one or more options from a list of checkboxes
+        JRadioButton: a component for allowing the user to select one option from a list of radio buttons
+        The javax.swing.* package also provides support for advanced features such as accessibility, internationalization, and customizable look and feel. Developers can customize the appearance and behavior of Swing components using pluggable look-and-feel (PLAF) architectures, or they can create their own custom look-and-feel.
 
-Overall, javax.swing.* provides a powerful and flexible toolkit for creating GUIs in Java, with a wide range of components and advanced features.
+        Overall, javax.swing.* provides a powerful and flexible toolkit for creating GUIs in Java, with a wide range of components and advanced features.
 
 [9] expalain java.awt.event.* 
 
- java.awt.event.* is a package in the Java programming language that provides a set of classes and interfaces for handling events in graphical user interfaces (GUIs). Events are actions or occurrences that take place within a GUI, such as mouse clicks, key presses, and window events.
+        java.awt.event.* is a package in the Java programming language that provides a set of classes and interfaces for handling events in graphical user interfaces (GUIs). Events are actions or occurrences that take place within a GUI, such as mouse clicks, key presses, and window events.
 
-Some of the commonly used classes and interfaces in the java.awt.event.* package include:
+        Some of the commonly used classes and interfaces in the java.awt.event.* package include:
 
-ActionEvent: an event that occurs when a component, such as a button, is activated
-MouseListener: an interface for handling mouse events, such as clicks, enters, and exits
-MouseAdapter: a class that provides default implementations of the MouseListener interface, allowing developers to override only the methods they need
-KeyListener: an interface for handling keyboard events, such as key presses and releases
-KeyEvent: an event that represents a key press or release
-WindowListener: an interface for handling window events, such as opening, closing, and iconifying windows
-WindowAdapter: a class that provides default implementations of the WindowListener interface, allowing developers to override only the methods they need
-Developers can use these classes and interfaces to create event listeners that respond to user input in their GUIs. For example, a developer might create a MouseListener to handle clicks on a button, or a KeyListener to handle typing in a text field.
+        ActionEvent: an event that occurs when a component, such as a button, is activated
+        MouseListener: an interface for handling mouse events, such as clicks, enters, and exits
+        MouseAdapter: a class that provides default implementations of the MouseListener interface, allowing developers to override only the methods they need
+        KeyListener: an interface for handling keyboard events, such as key presses and releases
+        KeyEvent: an event that represents a key press or release
+        WindowListener: an interface for handling window events, such as opening, closing, and iconifying windows
+        WindowAdapter: a class that provides default implementations of the WindowListener interface, allowing developers to override only the methods they need
+        Developers can use these classes and interfaces to create event listeners that respond to user input in their GUIs. For example, a developer might create a MouseListener to handle clicks on a button, or a KeyListener to handle typing in a text field.
 
-Overall, the java.awt.event.* package provides a powerful set of tools for creating responsive and interactive GUIs in Java.
+        Overall, the java.awt.event.* package provides a powerful set of tools for creating responsive and interactive GUIs in Java.
 
 [10] multithreading
 
-Multithreading is a programming concept that allows multiple threads of execution to run concurrently within a single program. Each thread can perform a separate task or function, allowing the program to perform multiple actions simultaneously.
-[11] difference between process and thread
+        Multithreading is a programming concept that allows multiple threads of execution to run concurrently within a single program. Each thread can perform a separate task or function, allowing the program to perform multiple actions simultaneously.
+        [11] difference between process and thread
 
-Definition: A process is a program under execution, whereas a thread is a lightweight process that can be managed within a process.
+        Definition: A process is a program under execution, whereas a thread is a lightweight process that can be managed within a process.
 
-Resource Usage: A process is a heavy-weight entity that requires its own memory space, system resources, and CPU time, whereas a thread is a light-weight entity that shares memory and resources with other threads within the same process.
+        Resource Usage: A process is a heavy-weight entity that requires its own memory space, system resources, and CPU time, whereas a thread is a light-weight entity that shares memory and resources with other threads within the same process.
 
-Context Switching: Context switching between processes is more expensive than context switching between threads, as the former involves saving and restoring the entire process state, whereas the latter only involves saving and restoring the thread state.
+        Context Switching: Context switching between processes is more expensive than context switching between threads, as the former involves saving and restoring the entire process state, whereas the latter only involves saving and restoring the thread state.
 
-Communication and Synchronization: Processes have their own address space and cannot directly share data or communicate with each other, whereas threads can easily share data and communicate with each other through shared memory or message passing. However, threads need to be synchronized to access shared data and avoid race conditions.
+        Communication and Synchronization: Processes have their own address space and cannot directly share data or communicate with each other, whereas threads can easily share data and communicate with each other through shared memory or message passing. However, threads need to be synchronized to access shared data and avoid race conditions.
 
 
 
-Parallelism and Concurrency: Processes can run in parallel on multiple CPUs or cores, whereas threads can run concurrently within a single CPU or core.
+        Parallelism and Concurrency: Processes can run in parallel on multiple CPUs or cores, whereas threads can run concurrently within a single CPU or core.
 
-Memory: Each process has its own memory space, while threads within a process share the same memory space.
-Resource usage: Each process has its own system resources, such as file handles and network sockets, while threads within a process share the same resources.
-Communication: Processes can communicate with each other using inter-process communication mechanisms such as pipes, sockets, and shared memory. Threads within a process can communicate with each other using shared variables.
-Scheduling: Processes are scheduled by the operating system's scheduler, which allocates CPU time to each process. Threads within a process are scheduled by the thread scheduler, which is part of the process.
-Creation time: Creating a new process is slower and consumes more system resources than creating a new thread.
-Context switching: Switching between processes involves more overhead than switching between threads within a process, because the operating system needs to switch the memory context and system resources for each process. Switching between threads within a process is faster because the memory context and system resources are already set up.
+        Memory: Each process has its own memory space, while threads within a process share the same memory space.
+        Resource usage: Each process has its own system resources, such as file handles and network sockets, while threads within a process share the same resources.
+        Communication: Processes can communicate with each other using inter-process communication mechanisms such as pipes, sockets, and shared memory. Threads within a process can communicate with each other using shared variables.
+        Scheduling: Processes are scheduled by the operating system's scheduler, which allocates CPU time to each process. Threads within a process are scheduled by the thread scheduler, which is part of the process.
+        Creation time: Creating a new process is slower and consumes more system resources than creating a new thread.
+        Context switching: Switching between processes involves more overhead than switching between threads within a process, because the operating system needs to switch the memory context and system resources for each process. Switching between threads within a process is faster because the memory context and system resources are already set up.
 
 [12] difference between interface and abstraction in java
 
-n Java, both interface and abstraction are used for achieving abstraction, but they have some differences.
+        both interface and abstraction are used for achieving abstraction, but they have some differences.
 
-Definition: An interface is a collection of abstract methods and constants, while abstraction is a mechanism of hiding the implementation details and showing only the necessary features.
+        Definition: An interface is a collection of abstract methods and constants, while abstraction is a mechanism of hiding the implementation details and showing only the necessary features.
 
-Implementation: An interface can be implemented by any class or any number of classes, whereas abstraction is implemented by abstract classes or interfaces.
+        Implementation: An interface can be implemented by any class or any number of classes, whereas abstraction is implemented by abstract classes or interfaces.
 
-Method: In an interface, all methods are public and abstract by default. In abstraction, abstract classes can have both abstract and non-abstract methods.
+        Method: In an interface, all methods are public and abstract by default. In abstraction, abstract classes can have both abstract and non-abstract methods.
 
-Multiple Inheritance: Java supports multiple inheritance through interfaces, but not through abstraction. A class can implement multiple interfaces, but can only inherit from a single abstract class.
+        Multiple Inheritance: Java supports multiple inheritance through interfaces, but not through abstraction. A class can implement multiple interfaces, but can only inherit from a single abstract class.
 
-Keyword: The keyword used for interface is "interface", while the keyword used for abstraction is "abstract".
+        Keyword: The keyword used for interface is "interface", while the keyword used for abstraction is "abstract".
 
-Access Modifiers: In an interface, all the methods and variables are by default public, whereas in abstraction, we can use any access modifier for methods and variables.
+        Access Modifiers: In an interface, all the methods and variables are by default public, whereas in abstraction, we can use any access modifier for methods and variables.
 
-Constructor: An interface does not have a constructor, while an abstract class can have a constructor.
+        Constructor: An interface does not have a constructor, while an abstract class can have a constructor.
 
-In summary, interfaces provide a way to achieve abstraction by defining a set of methods that a class must implement, while abstraction provides a way to hide implementation details and show only necessary features by using abstract classes or interfaces.
+        In summary, interfaces provide a way to achieve abstraction by defining a set of methods that a class must implement, while abstraction provides a way to hide implementation details and show only necessary features by using abstract classes or interfaces.
 
 
 
 [13] what is the purpose of static keyword in java 
 
-In Java, the static keyword is used to define a class-level variable or method that belongs to the class itself, rather than an instance of the class. Here are some common purposes of the static keyword in Java:
+        In Java, the static keyword is used to define a class-level variable or method that belongs to the class itself, rather than an instance of the class. Here are some common purposes of the static keyword in Java:
 
-To create class-level variables: A static variable or field is associated with the class, not with any instance of the class. Therefore, the value of a static variable is shared among all instances of the class.
+        To create class-level variables: A static variable or field is associated with the class, not with any instance of the class. Therefore, the value of a static variable is shared among all instances of the class.
 
-To create class-level methods: A static method can be invoked on the class itself, rather than on an instance of the class. This means that the method can be called without creating an object of the class.
+        To create class-level methods: A static method can be invoked on the class itself, rather than on an instance of the class. This means that the method can be called without creating an object of the class.
 
-To create constants: Constants are typically declared as public static final variables. They are used to define values that are fixed and will not change during the program's execution.
+        To create constants: Constants are typically declared as public static final variables. They are used to define values that are fixed and will not change during the program's execution.
 
-To provide utility classes: Utility classes are often used to group related methods that do not require an instance of the class to be created. Such utility classes often have only static methods.
+        To provide utility classes: Utility classes are often used to group related methods that do not require an instance of the class to be created. Such utility classes often have only static methods.
 
-To improve performance: In some cases, using the static keyword can improve performance. For example, using a static variable to cache a result can avoid the need to calculate the result multiple times.
+        To improve performance: In some cases, using the static keyword can improve performance. For example, using a static variable to cache a result can avoid the need to calculate the result multiple times.
 
-In summary, the static keyword in Java is used to define class-level variables and methods, constants, and utility classes. It can also be used to improve performance in certain cases.
+        In summary, the static keyword in Java is used to define class-level variables and methods, constants, and utility classes. It can also be used to improve performance in certain cases.
+
+[14] final keyword
+
+        In Java, the final keyword is used to define constants, methods, and classes that cannot be changed or overridden. Here are some common purposes of the final keyword in Java:
+
+        To create constants: A final variable is one whose value cannot be changed after initialization. Constants are typically declared as public static final variables and are used to define values that are fixed and will not change during the program's execution.
+
+        To prevent method overriding: A final method cannot be overridden by any subclass. This is useful in situations where the superclass provides a critical implementation that must not be changed by subclasses.
+
+        To prevent class inheritance: A final class cannot be subclassed. This is useful in situations where the class provides a complete implementation that should not be modified or extended by other classes.
+
+        To improve performance: In some cases, using the final keyword can improve performance. For example, using a final variable can allow the compiler to optimize the code by replacing the variable with a constant value.
+
+        In summary, the final keyword in Java is used to create constants, prevent method overriding and class inheritance, and improve performance in certain cases.
 
 
+[15] purpose of this keyword in java
+
+        In Java, the this keyword is used to refer to the current object instance within a class. Here are some common purposes of the this keyword in Java:
+
+        To refer to instance variables: When a local variable has the same name as an instance variable, the this keyword is used to distinguish between them. For example, this.name refers to the instance variable name, while name refers to the local variable.
+
+        To call constructors: Within a constructor, the this keyword can be used to call another constructor of the same class. This is called a constructor chaining. The syntax for calling another constructor using this is this(args).
+
+        To return the current object: When a method needs to return the current object, the this keyword is used. This is useful when you want to chain method calls on the same object. For example, return this returns the current object.
+
+        To pass the current object as a parameter: When you need to pass the current object as a parameter to another method, the this keyword is used. For example, someMethod(this) passes the current object as a parameter to someMethod.
+
+[16] purpose of super keyword
+
+        In Java, super is a keyword that is used to refer to the parent class of a subclass. Here are some common purposes of the super keyword:
+
+        To call a parent class constructor: When you create an object of a subclass, the constructor of the parent class is called automatically. If the parent class has multiple constructors, you can use super to call a specific constructor of the parent class. For example:
+            public class Animal {
+                private String name;
+
+                public Animal(String name) {
+                    this.name = name;
+                }
+            }
+
+            public class Dog extends Animal {
+                private int age;
+
+                public Dog(String name, int age) {
+                    super(name); // call the constructor of the parent class
+                    this.age = age;
+                }
+            }
+        To call a parent class method: If a subclass overrides a method of the parent class, you can use super to call the original implementation of the method in the parent class. For example:
+                public class Animal {
+                    public void makeSound() {
+                        System.out.println("Animal makes a sound");
+                    }
+                }
+
+                public class Dog extends Animal {
+                    public void makeSound() {
+                        super.makeSound(); // call the makeSound method of the parent class
+                        System.out.println("Dog barks");
+                    }
+                }
+                To refer to a parent class variable: If a subclass has a variable with the same name as a variable in the parent class, you can use super to refer to the variable in the parent class. For example
+
+                public class Animal {
+                    protected int age;
+                }
+
+                public class Dog extends Animal {
+                    private int age;
+
+                    public void printAge() {
+                        System.out.println(super.age); // refer to the age variable in the parent class
+                        System.out.println(this.age); // refer to the age variable in the subclass
+                    }
+                }
+
+        In summary, the super keyword in Java is used to refer to the parent class of a subclass, to call a parent class constructor or method, and to refer to a parent class variable.
+
+[17] thread life cycle 
+
+        In Java, a thread follows a specific life cycle, which consists of various states. Here are the states of a thread in the order they occur:
+
+        New: A thread is in the new state when it is first created but has not yet started running. At this stage, the thread is not considered alive.
+
+        Runnable: When a thread is ready to run but the scheduler has not yet selected it to be the running thread, it is in the runnable state. In other words, the thread is waiting for its turn to execute.
+
+        Running: When a thread is selected by the scheduler to be the running thread, it enters the running state. The thread is now actively executing its code.
+
+        Blocked: A thread enters the blocked state when it is waiting for a monitor lock to be released by another thread. This can happen, for example, when the thread is waiting to enter a synchronized block of code.
+
+        Waiting: A thread enters the waiting state when it is waiting for a specific condition to be met. This can happen, for example, when the thread calls the wait() method on an object.
+
+        Timed Waiting: Similar to the waiting state, a thread enters the timed waiting state when it is waiting for a specific condition to be met, but with a time limit. This can happen, for example, when the thread calls the sleep() or join() method with a specific time limit.
+
+        Terminated: A thread enters the terminated state when it has completed its execution and has either been stopped or has naturally terminated.
+
+        +--------+                +-----------+
+        |  New   |  -- start() --> |  Runnable |
+        +--------+                +-----------+
+            |
+            |              +---------+
+            +----------- | Running |
+            |              +---------+
+            |
+            |            +---------+
+            +----------> | Blocked |
+            |            +---------+
+            |
+            |          +---------+
+            +--------> | Waiting |
+            |          +---------+
+            |
+            |           +--------------+
+            +---------> | Timed Waiting|
+            |           +--------------+
+            |
+            |             +-----------+
+            +-----------> | Terminated|
+                        +-----------+
+[18] explain JRE
+
+        JRE stands for Java Runtime Environment. It is a software package that provides the environment necessary for running Java programs. It includes the Java Virtual Machine (JVM), class libraries, and other supporting files. The JVM is the component of the JRE that interprets the compiled Java code and executes it on the computer. The JRE does not include the tools used for developing Java programs, such as the Java compiler and debugger. These tools are included in the Java Development Kit (JDK), which includes the JRE as well.
+
+[19] expllain JVM
+
+        JVM stands for Java Virtual Machine. It is an essential part of the Java Runtime Environment (JRE) and is responsible for interpreting compiled Java code (bytecode) and executing it on a computer.
+
+        When a Java program is compiled, it is converted into a platform-independent bytecode that can be executed on any system that has a JVM installed. The JVM provides a virtual environment that simulates a real hardware environment, allowing the bytecode to be executed in a consistent and secure manner.
+
+        The JVM includes several key components, including the class loader, bytecode verifier, just-in-time (JIT) compiler, and runtime data areas.
+
+        Class Loader: It loads the compiled Java classes into the JVM.
+        Bytecode Verifier: It verifies that the loaded bytecode is valid and does not violate any security restrictions.
+        JIT Compiler: It compiles frequently used bytecode into native machine code to improve performance.
+        Runtime Data Areas: It includes the method area, heap, stack, and program counter. These areas are used to store class and method information, objects and their data, and execution state information.
+        The JVM provides several benefits for Java programmers, including platform independence, memory management, automatic garbage collection, and security.
+[20] bytecode 
+
+        Bytecode is a low-level representation of a Java program that is created when the program is compiled. It is a platform-independent code that can be executed on any system that has a Java Virtual Machine (JVM) installed.
+
+        The Java compiler compiles Java source code into bytecode, which is a set of instructions that can be executed by the JVM. The bytecode is stored in .class files, which can be distributed to other systems and run on any platform with a compatible JVM.
+
+        Bytecode is designed to be platform-independent, which means that the same bytecode can be executed on any system that has a JVM installed, regardless of the underlying hardware and operating system. This makes Java programs highly portable and reduces the need for recompilation when moving between different platforms.
+
+        The JVM is responsible for interpreting the bytecode and executing it on the host system. It includes a Just-In-Time (JIT) compiler that can optimize frequently used bytecode on the fly to improve performance.
+
+        In summary, bytecode is a low-level representation of a Java program that is created when the program is compiled. It is a platform-independent code that can be executed on any system that has a JVM installed, making Java programs highly portable
+
+[21]why java is secure 
+
+        Java is considered secure for several reasons:
+
+        Bytecode: Java code is compiled into bytecode, which is a platform-independent format that can be executed on any machine with a Java Virtual Machine (JVM) installed. This bytecode is designed to be executed securely on any system, regardless of its architecture.
+
+        Security Manager: Java has a built-in Security Manager that controls the access of Java code to system resources. It allows the developer to define a security policy, which specifies which operations are allowed to be performed by the Java code.
+
+        Garbage Collection: Java has a garbage collector that automatically frees up memory used by objects that are no longer in use. This prevents memory leaks, which can be exploited by attackers to execute malicious code.
+
+        Exception Handling: Java's exception handling mechanism ensures that the code is robust and can handle unexpected errors, preventing crashes that could leave the system vulnerable.
+
+        Sandboxing: Java provides a sandboxing mechanism that isolates the execution of untrusted code. This means that code running in the sandbox has limited access to the system resources and cannot harm the host system.
+
+[22] explain  difference between JDK and JRE
+
+        
+        JDK and JRE are two related but different software packages for working with Java applications.
+
+        JDK stands for Java Development Kit, and it is a software development environment used for developing Java applications, applets, and components. The JDK includes all the tools, libraries, and documentation required for developing and testing Java applications, including the Java compiler, JavaDoc, Java Debugger, and a set of class libraries.
+
+        JRE stands for Java Runtime Environment, and it is a package that is required to run Java applications on a computer. The JRE includes the Java Virtual Machine (JVM) and the Java class libraries, but it does not include the development tools such as the Java compiler or JavaDoc.
+
+        In simpler terms, the JRE is used to run Java applications, while the JDK is used to develop Java applications. If you are a Java developer, you will need the JDK to write, compile, and test your Java code. On the other hand, if you are an end-user who wants to run a Java application, you will only need the JRE installed on your computer to do so.
+
+        It's also worth noting that the JDK includes the JRE, so if you install the JDK, you will automatically have the JRE installed as well.
+
+[23] java applets
+
+        Java applets are small Java programs that are designed to be run within a web browser. They are often used to create interactive web applications and other dynamic content on web pages.
+
+        When a web page containing a Java applet is loaded into the web browser, the browser downloads the applet code from the web server to the client machine. The applet code is then executed within the JVM, which is a separate software component that runs on the client machine.
+
+        The JVM provides a platform-independent runtime environment for executing Java code, including Java applets. It translates the Java bytecode generated by the Java compiler into machine code that can be executed on the client machine. The JVM also provides various services, such as memory management, security, and class loading, to the Java applet code.
+
+        In summary, the web browser does not include a JVM, but it provides a platform for running Java applets by loading and running the JVM on the client machine.
 
 
+[24] what is polymorphism how can we obtain it in our programs
+
+
+        Polymorphism is a programming concept that allows objects of different classes to be treated as if they were of the same class, by sharing a common interface or superclass. This enables code to be written that is more flexible and adaptable, and can work with different types of objects without knowing their exact type at compile time.
+
+        There are two main types of polymorphism in Java:
+
+        Compile-time polymorphism (also known as method overloading): This occurs when two or more methods in a class have the same name but different parameters. The Java compiler determines which method to call based on the number and type of arguments passed to the method.
+        For example, consider the following code:
+
+
+            public class MyClass {
+            public int sum(int x, int y) {
+                return x + y;
+            }
+
+            public double sum(double x, double y) {
+                return x + y;
+            }
+            }
+        In this example, the MyClass class defines two methods with the same name (sum) but different parameter types (int and double). When we call the sum method with int arguments, the compiler will select the sum(int x, int y) method, and when we call it with double arguments, it will select the sum(double x, double y) method.
+
+        Runtime polymorphism (also known as method overriding): This occurs when a subclass provides its own implementation of a method that is already defined in its superclass. When an object of the subclass is used to call the overridden method, the subclass's implementation of the method is executed instead of the superclass's implementation.
+        For example, consider the following code:
+
+
+            public class Animal {
+            public void makeSound() {
+                System.out.println("Animal is making a sound");
+            }
+            }
+
+            public class Cat extends Animal {
+            public void makeSound() {
+                System.out.println("Meow");
+            }
+            }
+        In this example, the Cat class extends the Animal class and overrides the makeSound method. When we create an object of the Cat class and call the makeSound method, the Cat class's implementation of the method is executed, and "Meow" is printed to the console.
+
+        We can obtain polymorphism in our programs by using interfaces, abstract classes, and inheritance. By defining common methods in a superclass or interface, we can create objects of different classes that implement those methods and can be treated as if they were of the same type. This allows us to write code that is more flexible, reusable, and maintainable.
+
+[25] inheeritance
+
+
+        Inheritance is a key feature of object-oriented programming in Java that allows one class to inherit properties and methods from another class. The class that is being inherited from is called the parent class, super class, or base class, and the class that inherits from it is called the child class, sub class, or derived class.
+
+        In Java, inheritance is implemented using the extends keyword. The child class can access all the public and protected methods and properties of the parent class, and can also define its own methods and properties. In this way, inheritance enables code reuse and facilitates the creation of complex, hierarchical class structures.
+
+        For example, consider the following code:
+
+
+        public class Animal {
+        private String name;
+        
+        public Animal(String name) {
+            this.name = name;
+        }
+        
+        public void eat() {
+            System.out.println(name + " is eating");
+        }
+        }
+
+        public class Cat extends Animal {
+        public Cat(String name) {
+            super(name);
+        }
+        
+        public void meow() {
+            System.out.println("Meow");
+        }
+        }
+        In this example, the Animal class defines a private name field and a public eat method. The Cat class extends the Animal class using the extends keyword, and adds its own meow method. When we create an object of the Cat class and call the eat method, it will execute the Animal class's implementation of the method, which prints the name of the animal and the fact that it is eating. When we call the meow method, it will execute the Cat class's implementation of the method, which prints "Meow" to the console.
+
+        In summary, inheritance in Java enables the creation of classes that inherit properties and methods from other classes, and allows for code reuse and the creation of complex class hierarchies.
+
+[26] multiple inheritance
+
+        Java does not support multiple inheritance of classes. This means that a Java class can only inherit from one parent class at a time.
+
+        The reason for this is to avoid the so-called "diamond problem", which can arise when multiple inheritance is allowed. The diamond problem occurs when a subclass inherits from two classes that have a common superclass. This can create ambiguity when the subclass tries to call a method that is defined in both parent classes. Since Java does not support multiple inheritance of classes, it avoids the diamond problem altogether.
+
+        However, Java does support multiple inheritance of interfaces. An interface is like a contract that defines a set of methods that a class must implement. A Java class can implement multiple interfaces, each of which can define its own set of methods. This enables code reuse and allows for more flexible and modular code design.
+
+        For example, consider the following code:
+
+        public interface Walkable {
+        public void walk();
+        }
+
+        public interface Swimmable {
+        public void swim();
+        }
+
+        public class Animal implements Walkable, Swimmable {
+        public void walk() {
+            System.out.println("Animal is walking");
+        }
+        
+        public void swim() {
+            System.out.println("Animal is swimming");
+        }
+        }
+        In this example, the Walkable and Swimmable interfaces define the walk and swim methods, respectively. The Animal class implements both interfaces and provides its own implementations of the methods. When we create an object of the Animal class and call the walk or swim methods, it will execute the Animal class's implementations of the methods, which print "Animal is walking" or "Animal is swimming", respectively.
+
+        In summary, while Java does not support multiple inheritance of classes, it does support multiple inheritance of interfaces, which enables code reuse and more flexible code design.
+
+[27]where mvc is used 
+
+        In summary, MVC is a software design pattern that is used to separate the concerns of an application into three components: the model, the view, and the controller. It is used in a wide range of applications, including web applications, mobile applications, and desktop applications, to improve code maintainability and flexibility.
+
+        Here are some examples of where MVC is used:
+
+        Web applications: In web development, MVC is commonly used to separate the presentation layer (view) from the business logic and data (model and controller). This makes it easier to maintain and modify the application over time, and also makes it possible to reuse components of the application in different contexts.
+
+        Mobile applications: Many mobile application development frameworks use MVC to separate the UI (view) from the underlying data and business logic (model and controller). This makes it easier to develop and maintain complex mobile applications.
+
+        Desktop applications: MVC can also be used to develop desktop applications, where the view represents the graphical user interface (GUI), the model represents the underlying data and business logic, and the controller manages the interaction between the view and the model.
+
+[28]differentiate awt and swing in java
+
+        AWT (Abstract Window Toolkit) and Swing are both Java GUI (Graphical User Interface) libraries that allow developers to create graphical user interfaces for their applications. However, there are some key differences between AWT and Swing:
+
+        Architecture: AWT is a thin layer on top of the platform-specific windowing system, while Swing is a complete GUI toolkit written entirely in Java. This means that Swing can provide a more consistent look and feel across different platforms, while AWT applications may look and behave differently on different operating systems.
+
+        Components: AWT provides a basic set of components, such as buttons, checkboxes, and labels, while Swing provides a much wider range of components, including advanced components like tables, trees, and tabbed panes.
+
+        Customization: Swing components can be customized more easily than AWT components, using features such as look-and-feel pluggable, which allows developers to change the appearance of components without having to change the code.
+
+        Performance: Swing is generally slower than AWT, because it is entirely implemented in Java and relies on the Java Virtual Machine (JVM) to run. AWT, on the other hand, makes direct calls to the platform-specific windowing system, which can be faster.
+
+        In summary, AWT and Swing are both Java GUI libraries, but they have different architectures, components, customization options, and performance characteristics. AWT is a thin layer on top of the platform-specific windowing system and provides a basic set of components, while Swing is a complete GUI toolkit written entirely in Java and provides a wider range of components and customization options
+
+[29]what is encapsulation in java
+
+        Encapsulation is one of the fundamental concepts of object-oriented programming and is implemented in Java using classes and access modifiers. It is the practice of hiding the internal workings of an object from the outside world and providing a well-defined interface for interacting with that object.
+
+        In Java, encapsulation is achieved by declaring the class's fields as private and providing public methods (also called getters and setters) to access and modify those fields. This way, the internal state of the object can only be accessed and modified through these methods, ensuring that the object is always in a valid state.
+
+        For example, consider the following class:
+
+
+        public class Person {
+            private String name;
+            private int age;
+
+            public String getName() {
+                return name;
+            }
+
+            public void setName(String name) {
+                this.name = name;
+            }
+
+            public int getAge() {
+                return age;
+            }
+
+            public void setAge(int age) {
+                this.age = age;
+            }
+        }
+        In this class, the name and age fields are declared as private, so they can only be accessed from within the class. The public getName(), setName(), getAge(), and setAge() methods provide a well-defined interface for interacting with the Person object's internal state.
+
+        Using encapsulation helps to ensure that the internal state of an object is always valid and can only be modified in a controlled manner. It also provides a clear separation between the object's interface and its implementation, making it easier to maintain and modify the code over time.
+
+[30] differentiate method overriding and method oveerloading
+
+        Method Overloading and Method Overriding are two important concepts in Java that allow developers to reuse code and build more flexible and extensible applications. Here are the differences between them:
+
+        Definition: Method Overloading is a technique in which multiple methods can have the same name, but different parameters. Method Overriding is a technique in which a subclass provides a specific implementation of a method that is already provided by its parent class.
+
+        Parameters: Method Overloading is based on the number, type, and order of the parameters passed to the method. Method Overriding requires the same method name, return type, and parameters as the method being overridden in the superclass.
+
+        Inheritance: Method Overloading can be done in the same class or in a subclass of the class where the method is defined. Method Overriding can only be done in a subclass of the class where the method is defined.
+
+        Return Type: Method Overloading can have a different return type than the original method, as long as the method name and parameters are different. Method Overriding must have the same return type or a covariant return type (a return type that is a subclass of the original return type).
+
+        Usage: Method Overloading is useful when you want to provide different ways of calling a method, such as passing different types of parameters. Method Overriding is useful when you want to change the behavior of a method defined in a superclass to better fit the needs of a subclass.
+
+        In summary, Method Overloading and Method Overriding are both techniques for reusing code in Java, but they have different definitions, parameters, inheritance, return types, and usages. Method Overloading provides multiple methods with the same name but different parameters, while Method Overriding provides a specific implementation of a method that is already provided by its parent class.
