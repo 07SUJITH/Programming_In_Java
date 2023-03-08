@@ -1,3 +1,5 @@
+// write a function to reverse a linked list
+
 import java.util.Scanner;
 
 class Node {
@@ -116,17 +118,4 @@ public class ReverseLinkedList {
         }
     }
 
-}
-
-public Node findMiddle() {
-    if (head == null) {
-        return null;
-    }
-    Node slow = head;
-    Node fast = head;
-    while (fast != null && fast.next != null) {
-        slow = slow.next;
-        fast = fast.next.next;
-    }
-    return slow;
 }
